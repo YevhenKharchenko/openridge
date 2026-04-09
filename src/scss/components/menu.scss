@@ -1,6 +1,6 @@
 .context-menu {
-  background: #edeeec;
-  border-radius: 16px;
+  background: #fff;
+  border-radius: 8px;
   padding: 28px 0px;
   display: none;
   justify-content: center;
@@ -32,11 +32,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.3;
-  color: #32445c;
+  color: #252525;
   transition: color 0.3s ease-in-out;
 
   &:active {

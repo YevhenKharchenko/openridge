@@ -1,5 +1,6 @@
 .footer {
-  background: #32445c;
+  background: #252525;
+
   @include media(desktop) {
   }
 }
@@ -22,13 +23,30 @@
 }
 
 .footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-title {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #0e7bc9;
+
+  @include media(desktop) {
+    font-size: 64px;
   }
 }
 
 .footer-nav {
-  margin-bottom: 40px;
-
   @include media(desktop) {
   }
 }
@@ -36,6 +54,7 @@
 .footer-list {
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 16px;
 
   @include media(desktop) {
@@ -44,11 +63,12 @@
 }
 
 .footer-link {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #edeeec;
+  text-align: right;
+  color: #fff;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -61,12 +81,12 @@
 }
 
 .footer-bottom-text {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   font-size: 11px;
   line-height: 1.5;
   text-align: right;
-  color: #edeeec;
+  color: #fff;
 
   @include media(desktop) {
     font-size: 12px;

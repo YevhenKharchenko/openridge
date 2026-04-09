@@ -1,13 +1,11 @@
 .hero-section {
-  background: #e7e7e7;
-
   @include media(desktop) {
   }
 }
 
 .hero-bg-wrapper {
   padding-top: 100px;
-  padding-bottom: 359px;
+  padding-bottom: 225px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -17,8 +15,8 @@
   background-size: cover;
 
   @include media(desktop) {
-    padding-top: 150px;
-    padding-bottom: 190px;
+    padding-top: 120px;
+    padding-bottom: 80px;
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
   }
@@ -35,25 +33,39 @@
 }
 
 .hero-main-title {
-  font-family: 'Heebo', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
   line-height: 1.2;
-  color: #32445c;
-  margin-bottom: 21px;
+  color: #0e7bc9;
+  margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 72px;
-    margin-bottom: 58px;
+    font-size: 88px;
+    margin-bottom: 8px;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #252525;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 28px;
+    margin-bottom: 32px;
   }
 }
 
 .hero-text {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #32445c;
+  color: #252525;
 
   @include media(desktop) {
     font-size: 18px;

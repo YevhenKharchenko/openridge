@@ -1,5 +1,5 @@
 .header {
-  background: #edeeec;
+  background: #fff;
   padding: 6px 0;
   position: fixed;
   width: 100%;
@@ -40,16 +40,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
   }
 }
 
 .nav-list-link {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #32445c;
+  color: #252525;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +73,11 @@
 }
 
 .menu-icon {
-  stroke: #32445c;
+  stroke: #252525;
 }
 
 .close-icon {
-  stroke: #32445c;
+  stroke: #252525;
 }
 
 .close-btn {
