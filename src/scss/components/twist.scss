@@ -1,9 +1,9 @@
-.about-section {
+.twist-section {
   @include media(desktop) {
   }
 }
 
-.about-bg-wrapper {
+.twist-bg-wrapper {
   padding-top: 64px;
   padding-bottom: 64px;
   max-width: 375px;
@@ -17,35 +17,35 @@
   }
 }
 
-.about-container {
+.twist-container {
   @include media(desktop) {
   }
 }
 
-.about-content-wrapper {
+.twist-content-wrapper {
   display: flex;
   flex-direction: column;
   gap: 32px;
 
   @include media(desktop) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
+    justify-content: start;
   }
 }
 
-.about-text-wrapper {
+.twist-text-wrapper {
   @include media(desktop) {
-    width: 100%;
     max-width: 544px;
   }
 }
 
-.about-title {
+.twist-title {
   @include media(desktop) {
   }
 }
 
-.about-text {
+.twist-text {
   font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -57,46 +57,51 @@
   }
 }
 
-.about-top-text {
-  margin-bottom: 16px;
+.twist-top-text {
+  margin-bottom: 24px;
 
   @include media(desktop) {
   }
 }
 
-.about-bottom-text {
+.twist-bottom-text {
   @include media(desktop) {
   }
 }
 
-.about-list {
+.twist-list-text {
+  @include media(desktop) {
+  }
+}
+
+.twist-list {
   list-style-type: disc;
   padding-left: 25px;
-  color: #0e7bc9;
+  color: #252525;
   margin-bottom: 16px;
 
   @include media(desktop) {
   }
 }
 
-.about-list-item {
+.twist-list-item {
   @include media(desktop) {
   }
 }
 
-.about-item-text {
+.twist-item-text {
   font-family: 'Be Vietnam Pro', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  color: #0e7bc9;
+  color: #252525;
 
   @include media(desktop) {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
-.about-img {
+.twist-img {
   @include media(desktop) {
     min-width: 544px;
   }

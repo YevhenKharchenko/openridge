@@ -4,8 +4,8 @@
 }
 
 .gameplay-bg-wrapper {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 64px;
+  padding-bottom: 64px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -23,40 +23,46 @@
 }
 
 .gameplay-title {
-  margin-bottom: 8px;
-
   @include media(desktop) {
   }
 }
 
 .gameplay-text {
-  font-family: 'Heebo', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 1.5;
-  color: #32445c;
+  color: #252525;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.gameplay-top-text {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bottom-text {
   margin-bottom: 32px;
 
   @include media(desktop) {
+  }
+}
+
+.gameplay-list-text {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #252525;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
     font-size: 20px;
-  }
-}
-
-.gameplay-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    gap: 32px;
-  }
-}
-
-.gameplay-text-wrapper {
-  @include media(desktop) {
-    max-width: 544px;
   }
 }
 
@@ -64,23 +70,45 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 24px;
   }
 }
 
 .gameplay-list-item {
   @include media(desktop) {
+    width: 100%;
+    max-width: 352px;
+  }
+}
+
+.gameplay-item-title-wrapper {
+  display: flex;
+  align-items: end;
+  gap: 8px;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-img {
+  min-width: 36px;
+
+  @include media(desktop) {
   }
 }
 
 .gameplay-item-title {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
-  color: #32445c;
-  margin-bottom: 8px;
+  color: #252525;
 
   @include media(desktop) {
     font-size: 20px;
@@ -88,11 +116,11 @@
 }
 
 .gameplay-item-text {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Be Vietnam Pro', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #32445c;
+  color: #252525;
 
   @include media(desktop) {
     font-size: 18px;
@@ -100,7 +128,48 @@
 }
 
 .gameplay-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
   @include media(desktop) {
-    min-width: 542px;
+  }
+}
+
+.gameplay-bottom-list-text {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #252525;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.gameplay-bottom-list {
+  list-style-type: disc;
+  padding-left: 25px;
+  color: #252525;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bottom-list-item {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-bottom-item-text {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #252525;
+
+  @include media(desktop) {
+    font-size: 18px;
   }
 }
