@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Ridge: Skyline Paths — A Minimal Elevation Puzzle</title>
+    <meta
+      name="description"
+      content="Open Ridge: Skyline Paths is a calm path optimization puzzle where travelers move along narrow mountain ridges. Guide them using minimal trail markers and precise planning."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://openridge.space" />
+    <link rel="icon" type="image/png" href="/openridge/favicon.png" />
+    
+    <script type="module" crossorigin src="/openridge/assets/header-3c89ef5f.js"></script>
+    <link rel="stylesheet" href="/openridge/assets/header-1d6a5811.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="/openridge/assets/header-logo-91c55964.png"
+          alt="Logo"
+          width="44"
+          height="44"
+      /></a>
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay">Gameplay</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">Mechanics</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#twist">The Twist</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#experience">Experience</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="44" height="44">
+          <use href="/openridge/assets/sprite-5dd04ee8.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="40" height="40">
+          <use href="/openridge/assets/sprite-5dd04ee8.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <nav class="context-nav">
+    <ul class="context-nav-list">
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#home">Home</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#gameplay">Gameplay</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#about">Mechanics</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#twist">The Twist</a>
+      </li>
+      <li class="context-list-item">
+        <a class="context-list-link" href="./index.html#experience"
+          >Experience</a
+        >
+      </li>
+    </ul>
+  </nav>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <h1 class="hero-main-title">
+          Open Ridge:<br />
+          Skyline Paths
+        </h1>
+        <p class="hero-subtitle">Not Every Path Is Safe</p>
+        <p class="hero-text">
+          There is no road.<br />
+          Only a narrow ridge stretching across open space.<br />
+          <br />
+          In Open Ridge: Skyline Paths, you don’t build the world —<br />
+          you're trying to figure out the one path that won't get everyone
+          killed.<br />
+          <br />
+          Guide travelers. Place markers.<br />
+          And then you just have to hope like hell that whatever you picked
+          actually works.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section gameplay-section" id="gameplay">
+  <div class="gameplay-bg-wrapper">
+    <div class="container gameplay-container">
+      <h2 class="section-title gameplay-title">Gameplay</h2>
+      <p class="section-subtitle gameplay-subtitle">
+        A Path Defined by Decisions
+      </p>
+      <p class="gameplay-text gameplay-top-text">
+        Travelers will move forward.<br />
+        They always do.
+      </p>
+      <p class="gameplay-text gameplay-bottom-text">
+        It's weird - you're basically nobody in this story, but somehow
+        everything hinges on what you decide to do.
+      </p>
+      <p class="gameplay-list-text">Steps:</p>
+      <ul class="gameplay-list">
+        <li class="gameplay-list-item">
+          <div class="gameplay-item-title-wrapper">
+            <img
+              class="gameplay-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAnBJREFUeAHFmDGS0zAUhn9pUzBUKekI3XZJQUHBDM5wgGUPQJKdYYYym44uMhUFRThBnOUAmAPs2HsDcwMPFQVFCgqalXh2wo7xWpFkO+ab8SiSnuJ/pKenJzPUQESzPoOcKrARVT16+vsnI6EnZVChAr8R4yCFA8zFOBMCyDkNuywIMBGQvW8rzFqQH03mNCPCQUiRbMbEcny1MRlaCRLRZImdmIYoIcZX/iGLE3QmJoN53myIePPtRmtxaLi4fj0D52u0jJJy4b/8vIKLIHLgAQ2N6OcAlgz6p9j+/pk/Brb06ifk6NtyB9cOUVK4iDk7fYPp6B2Gj57bmPch5WVVR6WgfHYYm8LAg95DPKZZefv0PUZ2QgpvZvNdGPmXXqWxvPXId2ASM3/2MS9r0lfydkblyiyI8zMYyIT8+PX9rp75jyuM82G5raexHcBA5rib5MNdfekFqIFXbtCtywjdcM+HOP4v1oK26AbrONSVoLTcUC1IKe1Z0zJJuUEnKEYH0LaPy23VgvhJiA6WTUn1FTaC8kNPKmMy1ZDA7XDlPMRRYZWJmlYQqY+piHEcAl2ObQiMbIGjwLRprDGnFteTVZYqoD1odjYXuk7z0cG5QHs7Lj00O/nrYGC3E9gFWoDijjDdz6wOV/qTkMLAJzQjWL5YG0OJ/Wm/W7oU9UhtN4jrVXq0v4k43l7zG0ZqY+mUD9GfJsrglGXIfuHywcE5QfPHwcren5if2zvgtGRFRDT9QsWrAyYhxZtzONIghc1DQaLpTOuGitqC9vHpHPd3HtXZuOokt6H2kv2l9A0g3YtJUZPGggqi1tkyNRGT8QdNS8O9HL0oTgAAAABJRU5ErkJggg=="
+              alt="Number"
+              width="36"
+              height="36"
+            />
+            <h3 class="gameplay-item-title">Place Markers</h3>
+          </div>
+          <p class="gameplay-item-text">
+            Subtle indicators that shape direction
+          </p>
+        </li>
+        <li class="gameplay-list-item">
+          <div class="gameplay-item-title-wrapper">
+            <img
+              class="gameplay-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAzdJREFUeAG9mDFoFEEUht9MUgSxuCJgCpETBFMIOcTCQnAPQcsklSKYXECw80xnl1kry2gt5C6CYOWlVAh3BxbayAkWJwguYhEhxRUiKcyO783ths3ezO7M3pkPlr2debPz8+btmzfHoACiXSsxCFclsAo+eniVoovo4RUwkC0JvCuqjQAcYC7GJAQgrOOwRwkBeTTQ3rcVZi3Ib6/U0SPCQUgS8pjYqG438wytBIn2ygYMxYyJFKK67WdZTMGJiSGY59UWoNP83DVaZA0Xu/dqwPkWTBgZhuv+jZeb4CIIA7iMQ9v4s2yymZk+BWdOn4NyaV497/3+Ab/wGhzsQw4DnPo8Bvog3TFtHCJDAYyVTd0XZy/D0vx9JSrNh5/v4O23V5BBCcKQvlSR7tB6KPLOdzAwh155cOXJ0TN55ODvH9Ue09//BK+/PIcMtF7Seyg89DB2wMTtSw+PhOz0X0Aw6Kvn0sys6iNh8+hBWsq4T0NJhoc1vB+LJf2snC+CAZqEJia6QevYhCQw6ZWFuWuQBeN8YWRqg23Z0D6yLGlIVBzUsfAMvHSDKagrhnYVsHRlEQc6xVUOI1mfw4ShZYoFfdV4sKigARSAlsgrLw1fgMvW23ufN2Tw3wSRmNXKY3UnMc3eU5thQbpBH0NSdrOSYhoKdBJDSxWLscjWRC/dwA2COmBJBWOmoBj67DtgJYhPtcBi2a6evQmL0fZB+5iLGEKGcmdkap2hSuehzCymKHhvXbirflM+chWDNNw2V87RS7Ku6yIh5B2CPPMR81IyYSYxbx1MW6hl10PtVSo/vGQb7fJ3or3MBr9T0zWjd5pruo6cxMjW0y26csMdZixjc2tqsbuyCZzVYXIYvUPkbx2cCyiYuTUEWd5R00EOwy+BrcEEwLwj8s5nVpsrvqSFaeAZjEdj4/pW7rnMfrcfLl0AxQh0H4gO16N0JTqJOJ5eVe0c2Fg61UP40p7MCco0aL/u8oeDc4HmVxub9vHEfGXvgNOSJcEs/gZvSxkmLcw3y+DIGCWsSgU9Q2dQNFUUFhTlp2UY/fLwmVV1O7kNhZcsJvUfQBCJCaAgYwtKiNqiZRpHDPEPE/o2nZIQRqUAAAAASUVORK5CYII="
+              alt="Number"
+              width="36"
+              height="36"
+            />
+            <h3 class="gameplay-item-title">Guide Movement</h3>
+          </div>
+          <p class="gameplay-item-text">Travelers follow logic, not commands</p>
+        </li>
+        <li class="gameplay-list-item">
+          <div class="gameplay-item-title-wrapper">
+            <img
+              class="gameplay-item-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAA29JREFUeAG9mD9oE1Ecx3/vtUMRwQwFO4jGrYOQIIIdhF4QXNtOTjYpCG7Gbk724uTgUN0EoUkFwck4OpQk4OiQgkMHwdOpg0MEkQr2zt/v5Z6+Xt6/S0I/cKT33rveN9/f7/1+d2EwBmGnVmAQVxNgZTwN8CikB9HHI2KQtBPgvbDSjCAHLM9iEgIQ1/GyB4oAF01c3/AV5i2o0VmvoyNhDiEq5Fi4VdltuRZ6CQo761swFDMhSRhWdhu2FTNwamIIFgS1EnRb+z3jCtvl4d6dGnC+A1MmiePNxs1X25BHECZwES/t4J9FsHCpsAgLZy/C3OwZGBx9h6+DA/HpYIC3voyJPshOzBovSeIQGCuapknE7Sv3oTA3PzLXP/wAvahtE1aAOKadGmYntA6l7nwB039DEfeuPRauEBG68vvPLziPIqVAEvPi4yM4wnEDWpf0DsXHAeYOmFhZvPsvRK3+kxNOBMVVWMaDhF2/cEs4ZfpeSXxcw88TuaS/K+crYICEFDFvCF1YusoYhdUG47yUHTPlUBEsgvYxRwgKlQ4SRA7JkFoIwFNQ2TAubtY+eGmaFkKkg1K4hYKvIG/o5ufSRCYxS5g3xOHPb2K3TUvQADx7VmnhBpTxUKFQvvn03OfykTrEfReaoEJIoaFD5hS5Jneigyg7oHcoSXq2oqhCYVFDQzurWn4Ii/NXYYDb//3n19bLswPcIKgLY6LmTjaUWXDbd8FLEJ+haqYNGxW7+tJTUalNyOrsClkSJ+9Gbq1bKMp5nGgfpn6kNYZCI7d3FumMo8k2dc3V3B8419b8SOnmlLglJSwklMZkP7Nve6Z9ULM/D3Wq9PgRZMdl4qohoTCp5ySc+pwBdKe1oZswOzTUu6kbpcSlTq46IMWQMOpxFjFgckfMgINwb30bOKub5kmI7FsUSo+HM6M7hLt1cB7ifqiCoXKTI+SYJ5HNHXE7cDDcCWwDpgDWndD1fuYUlIpqYxl4BpPR3Frecb6XeQkarqTQjfYeTyLTBsmS91W6nL6J5Hx7Fc/Okc9Kf4dAhK6fOJIyC67fzPODQy5BRKPS3PbPJ9YQ63OQK2QqWMXf4seqZUkb680a5CS3Q/8RpaBvmIzGLRVjC0rr0xqM7jw8ZxVdJ/dh7JBJMr8BRKmYCMZkYkGKqB0K0yRiiL8DWV10UZAAkAAAAABJRU5ErkJggg=="
+              alt="Number"
+              width="36"
+              height="36"
+            />
+            <h3 class="gameplay-item-title">Protect the Ridge</h3>
+          </div>
+          <p class="gameplay-item-text">
+            One wrong turn leads into open terrain
+          </p>
+        </li>
+      </ul>
+      <picture>
+        <source
+          srcset="/openridge/assets/gameplay-img-desk-a3455ed9.png "
+          media="(min-width: 1440px)"
+          width="1120"
+          height="415" />
+        <source
+          srcset="/openridge/assets/gameplay-img-mob-420bb0a3.png "
+          width="343"
+          height="239" />
+        <img
+          class="gameplay-img"
+          src="/openridge/assets/gameplay-img-mob-420bb0a3.png"
+          alt="Screenshot of the game"
+          width="343"
+          height="239"
+          loading="lazy"
+      /></picture>
+      <p class="gameplay-bottom-list-text">Mini points:</p>
+      <ul class="gameplay-bottom-list">
+        <li class="gameplay-bottom-list-item">
+          <p class="gameplay-bottom-item-text">No excess tools</p>
+        </li>
+        <li class="gameplay-bottom-list-item">
+          <p class="gameplay-bottom-item-text">No second chances</p>
+        </li>
+        <li class="gameplay-bottom-list-item">
+          <p class="gameplay-bottom-item-text">Only clarity of thought</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <div class="about-content-wrapper">
+        <div class="about-text-wrapper">
+          <h2 class="section-title about-title">Mechanics</h2>
+          <p class="section-subtitle about-subtitle">Precision Over Quantity</p>
+          <p class="about-text about-top-text">
+            You are not given much.<br />
+            And that’s the point.
+          </p>
+          <ul class="about-list">
+            <li class="about-list-item">
+              <p class="about-item-text">Minimal Markers</p>
+            </li>
+            <li class="about-list-item">
+              <p class="about-item-text">Every placement matters</p>
+            </li>
+            <li class="about-list-item">
+              <p class="about-item-text">Open Terrain Illusion</p>
+            </li>
+          </ul>
+          <p class="about-text about-bottom-text">
+            It looks like you can just walk anywhere, but I've seen way too many
+            people step on what seemed totally solid and just... whoosh,
+            gone.<br />
+            Flow-Based Movement<br />
+            Travelers don’t stop — they commit
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="/openridge/assets/about-img-desk-2ae65961.png "
+            media="(min-width: 1440px)"
+            width="544"
+            height="504" />
+          <source
+            srcset="/openridge/assets/about-img-mob-c064ef4b.png "
+            width="343"
+            height="318" />
+          <img
+            class="about-img"
+            src="/openridge/assets/about-img-mob-c064ef4b.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="318"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section twist-section" id="twist">
+  <div class="twist-bg-wrapper">
+    <div class="container twist-container">
+      <div class="twist-content-wrapper">
+        <div class="twist-text-wrapper">
+          <h2 class="section-title twist-title">The Twist</h2>
+          <p class="section-subtitle twist-subtitle">
+            Mess Up Once, and You'll Know It
+          </p>
+          <p class="twist-text twist-top-text">
+            There are no walls.<br />
+            No warnings.<br />
+            <br />
+            A misplaced marker<br />
+            A delayed decision<br />
+            A misunderstood path<br />
+            <br />
+            And the traveler is gone.
+          </p>
+          <p class="twist-text twist-list-text">Mini points:</p>
+          <ul class="twist-list">
+            <li class="twist-list-item">
+              <p class="twist-item-text">Paths can mislead visually</p>
+            </li>
+            <li class="twist-list-item">
+              <p class="twist-item-text">Safe routes are not always obvious</p>
+            </li>
+            <li class="twist-list-item">
+              <p class="twist-item-text">Confidence is part of the puzzle</p>
+            </li>
+          </ul>
+        </div>
+        <picture>
+          <source
+            srcset="/openridge/assets/twist-img-desk-0a8b6f3c.png "
+            media="(min-width: 1440px)"
+            width="544"
+            height="541" />
+          <source
+            srcset="/openridge/assets/twist-img-mob-18aa57b0.png "
+            width="343"
+            height="341" />
+          <img
+            class="twist-img"
+            src="/openridge/assets/twist-img-mob-18aa57b0.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="341"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section experience-section" id="experience">
+  <div class="experience-bg-wrapper">
+    <div class="container experience-container">
+      <div class="experience-content-wrapper">
+        <div class="experience-text-wrapper">
+          <h2 class="section-title experience-title">Experience</h2>
+          <p class="section-subtitle experience-subtitle">
+            It’s About Seeing Clearly
+          </p>
+          <p class="experience-text experience-top-text">
+            Open Ridge: Skyline Paths is not about solving fast.<br />
+            It’s about understanding.<br />
+            <br />
+            Each level is a quiet question:<br />
+            What is the simplest correct path?<br />
+            <br />
+            Not the longest.<br />
+            Not the safest-looking.<br />
+            The true one.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="/openridge/assets/experience-img-desk-c42be3af.png "
+            media="(min-width: 1440px)"
+            width="544"
+            height="436" />
+          <source
+            srcset="/openridge/assets/experience-img-mob-36394c3a.png "
+            width="343"
+            height="275" />
+          <img
+            class="experience-img"
+            src="/openridge/assets/experience-img-mob-36394c3a.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="275"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section ridge-section" id="ridge">
+  <div class="ridge-bg-wrapper">
+    <div class="container ridge-container">
+      <div class="ridge-content-wrapper">
+        <div class="ridge-text-wrapper">
+          <h2 class="section-title ridge-title">Walk The Ridge</h2>
+          <p class="section-subtitle ridge-subtitle">Choose Carefully</p>
+          <p class="ridge-text ridge-top-text">
+            There is always a path.<br />
+            But it will not reveal itself easily.<br />
+            <br />
+            Step into the silence.<br />
+            Place the first marker.
+          </p>
+        </div>
+        <picture>
+          <source
+            srcset="/openridge/assets/ridge-img-desk-79ad8fa1.png "
+            media="(min-width: 1440px)"
+            width="544"
+            height="328" />
+          <source
+            srcset="/openridge/assets/ridge-img-mob-a5bb378b.png "
+            width="343"
+            height="207" />
+          <img
+            class="ridge-img"
+            src="/openridge/assets/ridge-img-mob-a5bb378b.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="207"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="footer-bg-wrapper">
+    <div class="container footer-container">
+      <div class="footer-content-wrapper">
+        <p class="footer-title">
+          Open Ridge:<br />
+          Skyline Paths
+        </p>
+        <nav class="footer-nav">
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a class="footer-link" href="./privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-link" href="./terms-and-conditions.html"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-bottom-text">
+        © 2026 — All rights reserved. openridge.space
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
